@@ -1,0 +1,37 @@
+generated: '2026-07-19'
+method: searched
+source: https://github.com/gensyn-ai/gensyn-delphi-sdk#readme
+docs: https://github.com/gensyn-ai/gensyn-delphi-sdk#readme
+summary:
+  types: [apiKey, wallet-signing]
+  api_key_in: [environment]
+  notes: >-
+    The Delphi API combines a REST API-access key with on-chain wallet signing.
+    No OpenAPI securitySchemes are published, so this profile is captured from the
+    published SDK documentation rather than derived from a spec.
+schemes:
+- name: DelphiApiAccessKey
+  type: apiKey
+  in: environment
+  variable: DELPHI_API_ACCESS_KEY
+  description: >-
+    REST API access key required for authenticated Delphi REST endpoints (market
+    and position queries). The public health endpoint requires no auth.
+  issued_at:
+    testnet: https://delphi-api-access.gensyn.ai/
+    mainnet: https://api-access.delphi.fyi/
+- name: WalletSigning
+  type: wallet-signing
+  description: >-
+    On-chain transactions (buy/sell shares, redeem, liquidate, ERC-20 approvals)
+    are signed by a wallet. Two options are supported.
+  methods:
+  - private-key
+  - coinbase-cdp-server-wallet
+environments:
+  testnet:
+    base_url: https://delphi-api.gensyn.ai/
+    rpc: https://gensyn-testnet.g.alchemy.com/public
+  mainnet:
+    base_url: https://api.delphi.fyi/
+    rpc: https://gensyn-mainnet.g.alchemy.com/public
