@@ -1,0 +1,28 @@
+generated: '2026-07-19'
+method: searched
+source: https://www.npmjs.com/package/@gensyn-ai/gensyn-delphi-sdk
+packages:
+- language: typescript
+  registry: npm
+  name: "@gensyn-ai/gensyn-delphi-sdk"
+  version: 1.2.1
+  license: MIT
+  url: https://www.npmjs.com/package/@gensyn-ai/gensyn-delphi-sdk
+  repository: https://github.com/gensyn-ai/gensyn-delphi-sdk
+  install: npm install @gensyn-ai/gensyn-delphi-sdk
+  description: SDK for agents to interact with the Delphi on-chain prediction market platform.
+  official: true
+- language: typescript
+  registry: github
+  name: gensyn-delphi-skills
+  url: https://github.com/gensyn-ai/gensyn-delphi-skills
+  repository: https://github.com/gensyn-ai/gensyn-delphi-skills
+  install: git clone https://github.com/gensyn-ai/gensyn-delphi-skills
+  description: Agent Skills package (Claude Agent SDK) for interacting with Delphi prediction markets. Not published to npm; distributed via GitHub.
+  official: true
+notes: |
+  Only @gensyn-ai/gensyn-delphi-sdk is published to a public package registry (npm, 200).
+  The gensyn-delphi-skills repo is an Agent Skills package distributed via GitHub only
+  (npm 404). No first-party client library was found on PyPI, Maven Central, NuGet,
+  pkg.go.dev, RubyGems, Packagist, or crates.io for the Delphi API. Gensyn's AXL (Go)
+  and REE (Python) are infrastructure/node implementations, not API client SDKs.

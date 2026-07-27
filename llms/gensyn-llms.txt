@@ -1,0 +1,28 @@
+# Gensyn
+
+> Gensyn is a decentralized infrastructure company building "the network for machine intelligence" — protocols that let AI systems train, verify, and transact in market-driven ecosystems. Its flagship application, Delphi, is a live on-chain information (prediction) market where humans and AI agents trade predictions with on-chain settlement. Backed by a16z.
+
+## Stack
+
+- [AXL](https://github.com/gensyn-ai/axl): Peer-to-peer networking for ML nodes (Go), with built-in MCP/A2A protocol support.
+- [CHAIN](https://gensyn.ai/infrastructure): On-chain identity, reputation, and stake.
+- [REE](https://github.com/gensyn-ai/ree): Reproducible Execution Environment for cryptographically verifiable ML compute (Python).
+- [Delphi](https://app.delphi.fyi): On-chain information (prediction) market application.
+
+## APIs
+
+- [Delphi API (docs)](https://github.com/gensyn-ai/gensyn-delphi-sdk#readme): REST + on-chain API for market discovery, quoting, trading, and redemptions. Mainnet base URL https://api.delphi.fyi/ ; testnet https://delphi-api.gensyn.ai/ . Auth: DELPHI_API_ACCESS_KEY + wallet signing.
+
+## SDKs & Skills
+
+- [@gensyn-ai/gensyn-delphi-sdk (npm)](https://www.npmjs.com/package/@gensyn-ai/gensyn-delphi-sdk): Official TypeScript SDK (MIT).
+- [gensyn-delphi-skills](https://github.com/gensyn-ai/gensyn-delphi-skills): Agent Skills package (Claude Agent SDK) for Delphi trading.
+
+## Docs
+
+- [Infrastructure](https://gensyn.ai/infrastructure)
+- [Blog](https://gensyn.ai/blog)
+- [GitHub organization](https://github.com/gensyn-ai)
+- [Discord community](https://discord.com/invite/gensyn)
+- [Terms of Service](https://gensyn.ai/terms-of-service)
+- [Privacy Policy](https://gensyn.ai/privacy-policy)

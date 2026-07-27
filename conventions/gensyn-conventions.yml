@@ -1,0 +1,34 @@
+generated: '2026-07-19'
+method: searched
+source: https://github.com/gensyn-ai/gensyn-delphi-sdk#readme
+api: Delphi API
+authentication:
+  style: api-key + on-chain wallet signing
+  ref: authentication/gensyn-authentication.yml
+pagination:
+  style: offset
+  params:
+    offset: skip
+    limit: limit
+  notes: >-
+    listMarkets / listPositions accept skip and limit parameters for offset-based
+    pagination (documented in the Delphi SDK method signatures).
+idempotency:
+  supported: false
+  notes: >-
+    No REST idempotency-key header is documented. Write operations are on-chain
+    transactions whose idempotency is enforced by blockchain settlement rather than
+    an API idempotency key.
+environments:
+  separation: testnet / mainnet
+  testnet: https://delphi-api.gensyn.ai/
+  mainnet: https://api.delphi.fyi/
+health:
+  endpoint: /health
+  auth_required: false
+  notes: Public service-availability check; returns 200 on testnet and mainnet.
+error_envelope:
+  documented: false
+  notes: The published SDK docs do not specify a REST error response format or HTTP status catalog.
+rate_limits:
+  documented: false

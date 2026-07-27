@@ -1,0 +1,28 @@
+generated: '2026-07-19'
+method: searched
+source: https://github.com/gensyn-ai/gensyn-delphi-sdk#readme
+api: Delphi API
+versioning:
+  scheme: environment-based
+  environments:
+  - name: testnet
+    base_url: https://delphi-api.gensyn.ai/
+    rpc: https://gensyn-testnet.g.alchemy.com/public
+  - name: mainnet
+    base_url: https://api.delphi.fyi/
+    rpc: https://gensyn-mainnet.g.alchemy.com/public
+  notes: >-
+    Delphi exposes distinct testnet and mainnet API hosts. No dated API version or
+    URI/header version scheme is published; the SDK is versioned on npm (currently 1.2.1).
+health:
+  testnet: https://delphi-api.gensyn.ai/health
+  mainnet: https://api.delphi.fyi/health
+  status: both return 200 (probed 2026-07-19)
+status_page:
+  found: false
+  notes: No dedicated public status page was found; /health serves as the liveness signal.
+deprecation:
+  policy_found: false
+  sunset_header: unknown
+sla:
+  found: false

@@ -1,0 +1,13 @@
+generated: '2026-07-19'
+method: searched
+source: https://github.com/gensyn-ai/gensyn-delphi-skills
+skills:
+- file: gensyn-delphi-trading.md
+  name: Trade on Delphi prediction markets
+  api: Delphi API
+  package: gensyn-delphi-skills
+  operations: [health, listMarkets, getMarket, listPositions, quoteBuy, quoteSell, buyShares, sellShares, redeemPositions, liquidate, approveToken]
+notes: >-
+  Gensyn publishes a first-party Agent Skills package (gensyn-delphi-skills, built on
+  the Claude Agent SDK) that wraps the Delphi SDK (@gensyn-ai/gensyn-delphi-sdk).
+  Operations below are the real DelphiClient methods documented in the SDK/skills repos.
