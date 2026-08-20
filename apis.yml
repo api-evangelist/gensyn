@@ -35,6 +35,15 @@ created: '2026-07-17'
 modified: '2026-07-19'
 tags:
 - Company
+- Artificial Intelligence
+- Machine-Learning
+- Decentralized Compute
+- Blockchain
+- Prediction Markets
+- Agents
+- Web3
+tags_raw:
+- Company
 - Ai
 - Machine Learning
 - Decentralized Compute
@@ -53,6 +62,10 @@ apis:
   humanURL: https://github.com/gensyn-ai/gensyn-delphi-sdk#readme
   baseURL: https://api.delphi.fyi/
   tags:
+  - Prediction Markets
+  - Trading
+  - Onchain
+  tags_raw:
   - Prediction Markets
   - Trading
   - On-Chain
