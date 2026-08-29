@@ -11,6 +11,17 @@ description: 'Gensyn is a decentralized infrastructure company building "the net
   agents can discover markets, quote, trade, and redeem positions programmatically.
   Backed by a16z.'
 url: https://raw.githubusercontent.com/api-evangelist/gensyn/refs/heads/main/apis.yml
+deliveryModel:
+  model: saas
+  open_source: false
+  commercial: true
+  callable_host: false
+  label: Hosted service · you call their endpoint
+  confidence: medium
+  source:
+  - pricing
+  generated: '2026-08-28'
+  method: derived
 accessModel:
   pricing: unknown
   onboarding: self-serve
