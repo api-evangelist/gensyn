@@ -48,7 +48,7 @@ modified: '2026-07-19'
 tags:
 - Company
 - Artificial Intelligence
-- Machine-Learning
+- Machine Learning
 - Decentralized Compute
 - Blockchain
 - Prediction Markets
@@ -63,6 +63,7 @@ tags_raw:
 - Prediction Markets
 - Agents
 - Web3
+- Machine-Learning
 apis:
 - name: Delphi API
   description: 'REST + on-chain API for the Delphi information (prediction) market
