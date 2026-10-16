@@ -2,17 +2,17 @@
 kin_checks:
   slug: gensyn
   schema_version: 0.23.0
-  scored_at: '2026-10-03'
-  run_ts: 2026-10-03T024842
+  scored_at: '2026-10-11'
+  run_ts: 2026-10-11T110117
   note: Actionable checks (missed + partial) in `checks`, plus the ids that did not
     apply in `na`. Everything else in rubric/scoring-0.23.0.yml was earned; counts
     below let you verify that.
   counts:
     total: 153
-    earned: 25
-    partial: 2
+    earned: 23
+    partial: 3
     missed: 83
-    na: 43
+    na: 44
   checks:
   - id: newsroom_present
     status: missed
@@ -184,6 +184,10 @@ kin_checks:
     status: partial
     earned: 1.0
     detail: pointer liveness 0.5
+  - id: mcp_server
+    status: partial
+    earned: 4.8
+    detail: 'grade: documented'
   - id: auth_clarity
     status: partial
     earned: 3.5
@@ -202,6 +206,7 @@ kin_checks:
   - graphql_type_depth
   - inbound_contract_published
   - info_complete
+  - mcp_endpoint_discoverable
   - messages_with_schema
   - oauth_flows_current
   - oauth_scopes_enumerated
