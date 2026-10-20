@@ -55,3 +55,23 @@ tool_quality:
   scored: false
   note: Facts from the saved tools/list capture (mcp_tool_quality.py); recorded, not scored. Checks learned
     from Glimind's agent-readiness audit.
+tools:
+- name: searchDocumentation
+  description: Search across the documentation to find relevant information, code examples, API references,
+    and guides. Use this tool when you need to answer questions about Gensyn, find specific documentation,
+    understand how features work, or locate implementation details. The search returns contextual content
+    with titles and direct links to the documentation pages.
+- name: getPage
+  description: Fetch the full markdown content of a specific documentation page from Gensyn. Use this
+    when you have a page URL and want to read its content. Accepts full URLs (e.g. https://docs.gensyn.ai//getting-started).
+    Since `searchDocumentation` returns partial content, use `getPage` to retrieve the complete page when
+    you need more details. The content includes links you can follow to navigate to related pages.
+- name: sendFeedback
+  description: Report an issue in the documentation of Gensyn so the team can fix it. Use it whenever,
+    while helping a user, you come across content that is outdated, contradictory, missing information,
+    or otherwise unhelpful. Also use it when the user themselves reports a problem with the docs, even
+    if you could not verify it yourself. If it's your own observation, do a quick sanity check that the
+    issue is real before reporting — no need to exhaustively re-read the page. Send one call per distinct
+    issue and do not report the same issue twice in a conversation. Do not use this tool to confirm that
+    a page is accurate; it is for reporting problems only.
+tools_count: 3
